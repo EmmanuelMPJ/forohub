@@ -1,8 +1,8 @@
 # Forohub
 
-Un foro es un espacio donde todos los participantes de una plataforma pueden plantear sus preguntas sobre determinados tópicos. Aquí en Alura Latam, los estudiantes utilizan el foro para sacar sus dudas sobre los cursos y proyectos en los que participan. Este lugar mágico está lleno de mucho aprendizaje y colaboración entre estudiantes, profesores y moderadores.
+Un foro es un espacio donde todos los participantes de una plataforma pueden plantear sus preguntas sobre determinados tópicos. Los estudiantes utilizan el foro para sacar sus dudas sobre los cursos y proyectos en los que participan.
 
-La aplicación trata de mostras como se realizan los procesos de un foro detras de escena, por esto se va a replicar este proceso a nivel de back end y, para eso, se creará una API REST usando Spring.
+La aplicación trata de mostrar como se realizan los procesos de un foro detrás de escena, por esto se va a replicar este proceso a nivel de back end y, para eso, se creará una API REST usando Spring.
 
 La API se centrará específicamente en los tópicos, y debe permitir a los usuarios:
 
@@ -33,7 +33,7 @@ La API se centrará específicamente en los tópicos, y debe permitir a los usua
 - `autenticación de usuarios`: Este proceso recibe un JSON con el nombre y la contraseña. La aplicación crea un usuario por defecto con nombre: NombreExample y contrasena: 123456.
 - `Autenticación mediante JWT`: Las siguientes características deberan enviar un token en el header, el cual debió de haber sido entregado en el paso anterior.
 - `Registro de tópicos.`: Se debe enviar un idUsuario, un titulo, un mensaje y el nombre de un curso para guardar el tópico en la base de datos. (no pueden haber tópicos duplicados)
-- `Actualizacion de tópicos`: Se debe enviar el id del tópico que se quiera actualizar, un titulo, un mensaje y un estado (SOLUCIONADO, CERRADO, SIN_RESPUESTA o SIN_SOLUCION). No será posible de duplicar un tópico mediante este metodo
+- `Actualizacion de tópicos`: Se debe enviar el id del tópico que se quiera actualizar, un título, un mensaje y un estado (SOLUCIONADO, CERRADO, SIN_RESPUESTA o SIN_SOLUCION). No será posible de duplicar un tópico mediante este metodo
 - `Eliminación de tópicos`: Se pasa mediante la URL el ID del tópico que se quiera eliminar.
 - `Listado de tópicos`: Se listan todos los topicos que se hayan registrado en la base de datos.
 - `Obtención de un tópico especifico`: Se pasa mediante la URL el ID del tópico que se quiera visualizar.
